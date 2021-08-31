@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku</title>
-    <link rel="icon" sizes="192x192" href="https://pbs.twimg.com/profile_images/1047734344327077888/fB9vXLeW_400x400.jpg">
+    <link rel="icon" sizes="192x192" href="https://img.icons8.com/dusk/64/000000/sudoku.png">
     <link rel="stylesheet" href="./assets/styles.css">
     <script type="text/javascript" src="./assets/script.js"></script>
 </head>
@@ -24,8 +24,11 @@
     <div class="game">
         <div id="board"></div>       
     </div>
-    <center><button class="val" onClick="validate()">Validate</button> </center>
+    <div class="resval">
+        <center><button class="val" onClick="validate()">Validate</button></center>
+        <br>
+        <center><button class="val" onClick="reset()">Reset</button></center>
+        </div>
     <!--End of Game-->
-
 </body>
 </html>

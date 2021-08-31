@@ -43,10 +43,32 @@ html {
     justify-content: space-between;
 }
 
-.diffbtn {
+.diffbtn, .val {
     text-align: center;
     justify-self: center;
     width: auto;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+}
+
+#easydiff {
+    background-color: rgb(255, 17, 0);
+}
+
+#mediumdiff {
+    background-color: rgb(255, 145, 0);
+}
+
+#harddiff {
+    background-color: darkolivegreen;
+}
+
+.val {
+    background-color: teal;
 }
 
 .cell {
@@ -65,7 +87,8 @@ html {
 }
 
 .cell:hover {
-    background-color: #99badd;
+    background-color: #bbdefb;
+    border-color: #93bdf7;
 }
 
 .game {
@@ -95,16 +118,30 @@ html {
     margin-top: 0;
 }
 
-.prefilled {
-    background-color: #dfe5f0 !important;
-    user-select: none;
-    color: rgb(14, 7, 119);
+.resval {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
 }
 
+.prefilled {
+    background-color: #ebebe4 !important;
+    user-select: none;
+    color: #6d7175;
+}
+
+p.highlighted {
+    background-color: rgb(226, 244, 250);
+}
 p.selected {
     background-color: lightblue;
 }
-
 p.incorrect {
     color: red !important;
+}
+p.modified {
+    background-color: rgb(129, 194, 224);
+}
+p.dup {
+    background-color: #99badd !important;
 }
